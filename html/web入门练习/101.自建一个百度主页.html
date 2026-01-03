@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>百度搜索</title>
+		
+		<style>
+		
+		/* div的位置 */
+		#main {
+			position: absolute;
+			left:45%;top:25%; 
+			margin-left:-200px;
+			margin-top:-100px;
+			border:0px solid #00F
+			} 
+		
+		
+		/* 文本框的美化 */
+		
+		input{
+			width:500px;
+			height:35px; 
+			font-size:22px;
+		    border: 2px solid #4662D9;
+			border-radius:9px;
+
+			
+			
+			size=40 baiduSug=1
+			
+		    padding: 1px 0px;
+		    border-radius: 2px;
+		    padding-left:5px;
+
+		    }
+		input:focus{
+		    border-color: #4662D9;
+		    outline: 0;
+		    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+		    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+		    }
+			
+			
+/* 			border: 1px solid #ccc;  设置输入框边框，边缘线的颜色、大小、及实线虚线
+			padding: 7px 0px;        设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好
+			border-radius: 3px;      这个属性石css3里面的,IE不支持
+			padding-left:5px;        让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的 */
+			
+		
+		/* 搜索按钮美化 */
+		
+		.login-button { /* 按钮美化 */
+			font-size:20px;
+			width: 120px; /* 宽度 */
+			height: 40px; /* 高度 */
+			border-width: 0px; /* 边框宽度 */
+			border-radius: 3px; /* 边框半径 */
+			background: #4662D9; /* 背景颜色 */
+			cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+			outline: none; /* 不显示轮廓线 */
+			font-family: Microsoft YaHei; /* 设置字体 */
+			color: white; /* 字体颜色 */
+			font-size: 17px; /* 字体大小 */
+		}
+		.login-button:hover { /* 鼠标移入按钮范围时改变颜色 */
+			background: #4662D9;
+		}
+		
+		</style> 
+		
+	</head>
+	<body>
+		
+		  
+		 <!-- 自己写 -->
+		  
+		  <form action="http://www.baidu.com/baidu" target="_blank"> 
+		  <div id="main" align="center" > 
+		  
+		  <input name="tn" type="hidden" value="baidu"  /> 
+		  <a href="http://www.baidu.com/"><img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="Baidu" align="bottom" width=300px; border="0" /></a><br>
+		  <input type=text name=word > 
+		  <input class="login-button" type="submit"  value="百度搜索">
+		  
+		  
+		  </div> 
+		  
+
+		  
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>表格之合并单元格</h1>
+		<hr>
+		本章节为重点，请务必要掌握。<br>
+		<h2>跨行合并:rowspan</h2>
+		<h2>跨列合并:colspan</h2>
+		
+		<ul>
+			<li>跨列合并的步骤：找到要合并的首个单元格，添加colspan属性，表示这个单元格占几列，删除下一个单元格。</li>
+			<li>跨行合并的步骤：找到要合并的首个单元格，添加rowspan属性，表示这个单元格占几行，删除同列下一行单元格。</li>
+		</ul>
+		&nbsp;<br>
+		
+		<!-- 表格开始 -->
+		<table border="1px" cellspacing="0">
+			<col width="200px"> <!-- 第1列宽度200 -->
+			<col width="200px"> <!-- 第2列宽度200 -->
+			<col width="200px"> <!-- 第3列宽度200 -->
+			<col width="200px"> <!-- 第4列宽度200 -->
+			<col width="200px"> <!-- 第5列宽度200 -->
+			<colgroup span="5" width="200px">
+			<tr align="center" height="40px"> <!-- 文字居中,及行高 -->
+				<td>标准</td>
+				<td>初级</td>
+				<td>中极</td>
+				<td>高级</td>
+				<td>专家</td>
+			</tr>
+			<tr align="center" height="40px">
+				<td>用户A</td>
+				<td colspan="4">横向合并</td> <!-- 横向合并：删除其他单元格，设置其占据的单元格数量 -->
+			</tr>
+			<tr align="center" height="40px">
+				<td>用户B</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td rowspan="5">纵向合并</td> <!-- 纵向合并：先删除其他单元格，设置其占据的单元格数量 -->
+			</tr>
+			<tr align="center" height="40px">
+				<td>用户C</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				
+			</tr>
+			<tr align="center" height="40px">
+				<td>用户D</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				
+			</tr>
+			<tr align="center" height="40px">
+				<td>用户E</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				
+			</tr>
+			<tr align="center" height="40px">
+				<td>用户F</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				
+			</tr>
+		</table>
+	</body>
+</html>

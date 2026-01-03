@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>表格的学习</title>
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+
+	<!-- 表格的创建 -->
+
+	<!-- table关键字就是定义一个表格 -->
+	<!-- border="1"边框的宽度,及时设置0也打不到效果,所以需要cellpadding="0",cellspacing="0"这两个辅助 -->
+	<!-- width="500"是整个表格列的宽度 -->
+	<!--但是table中定义行高height,对表头行是不起作用的！ -->
+	<!-- bgcolor="#faebd7"用来定义表格的背景颜色	 -->
+	<!-- align="center"可以使得表格居中,但是这里的居中好像是浮于文字上方  -->
+
+	<table border="1" cellpadding="0" cellspacing="0" width="800" height="200" bgcolor="#faebd7" align="center">
+
+		<!-- 表格的标题 -->
+		<caption>表格的创建</caption>
+		<thead>
+			<!-- tr定义表头行,th定义表头行的单元格 -->
+			<tr height="50" bgcolor="#7fffd4" align="center">
+				<th>列标题1</th>
+				<th>列标题2</th>
+				<th>列标题3</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr>
+				<!-- td是定义的内容行的单元格 -->
+				<td>行1,列1</td>
+				<td>行1,列2</td>
+				<td>行1,列3</td>
+			</tr>
+			<tr>
+				<td>行2,列1</td>
+				<td>行2,列2</td>
+				<td>行2,列3</td>
+			</tr>
+		</tbody>
+	</table>
+	<br />
+
+
+
+
+
+	<!-- 合并单元格练习 -->
+
+	<table border="1" cellpadding="0" cellspacing="0" width="800" height="200" bgcolor="#faebd7" align="center">
+		<caption>合并单元格练习</caption>
+
+			<!-- tr定义表头行,th定义表头行的单元格 -->
+			<tr height="50" bgcolor="#7fffd4" align="center">
+				<th rowspan="2">列标题1</th>
+				<th>列标题2</th>
+				<th>列标题3</th>
+			</tr>
+
+			<tr>
+				<!-- td是定义的内容行的单元格 -->
+				<!-- <td>行1,列1</td> -->
+				<td>行1,列2</td>
+				<td>行1,列3</td>
+			</tr>
+			<tr>
+				<td>行2,列1</td>
+				<td colspan="2">行2,列2</td>
+				<!-- <td>行2,列3</td> -->
+			</tr>
+
+	</table>
+	<br />
+
+	
+	<!-- <p> 下面给大家提供一个HTML表格生成器：</p>
+	<a href="https://www.jyshare.com/front-end/7688/" target="_blank">表格自动生成器</a><br> -->
+
+</body>
+
+</html>
