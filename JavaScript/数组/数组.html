@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 使用for循环遍历数组
+      let arr = ["red", "green", "blue"];
+      for (let item = 0; item < arr.length; item++) {
+        document.write(arr[item] + "<br />");
+      }
+
+      // 使用for...in遍历数组
+      let arr2 = ["red2", "green2", "blue2"];
+      for (let item in arr2) {
+        document.write(arr2[item] + "<br />");
+      }
+
+      //   // 生成数组函数,并遍历元素
+      function random_test() {
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+          arr[i] = Math.random();
+        }
+        return arr;
+      }
+
+      let result = random_test();
+      for (let item = 0; item < result.length; item++) {
+        document.write(result[item] + "<br />");
+      }
+
+      document.write(arr);
+    </script>
+  </body>
+</html>

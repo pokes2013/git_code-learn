@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>初始函数</h1>
+
+    <script>
+      // 多次打印helloworldint的函数
+      function print_helloworldint(n) {
+        for (var i = 0; i < n; i++) {
+          document.write("hello world!<br />");
+        }
+      }
+
+      print_helloworldint(10); //函数的调用
+      // ------------------------------------------------------------------------
+
+      // 两个数求和函数
+      function sum(a, b) {
+        var sum = a + b;
+        document.write("和为：" + sum);
+      }
+
+      sum(5, 6);
+
+      // // --------------------------------------------------------------------------
+
+      // n个数求和函数
+      function num_sum() {
+        var sum = 0;
+        for (var i = 0; i < arguments.length; i++) {
+          sum += arguments[i];
+        }
+        document.write("结果：" + sum);
+      }
+
+      num_sum(5, 6, 7, 9);
+    </script>
+  </body>
+</html>

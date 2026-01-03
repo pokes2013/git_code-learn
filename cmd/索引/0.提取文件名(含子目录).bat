@@ -1,0 +1,1 @@
+DIR *.avi *.rmvb *.rm *.asf *.divx *.mpg *.mpeg *.mpe *.wmv *.mp4 *.mkv *.vob  /B>C:\Temp\wenjian01.txt
