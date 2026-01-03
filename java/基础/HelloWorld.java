@@ -3,6 +3,3 @@ public class HelloWorld {
         System.out.println("我得第一个JAVA程序：Hello,World!");
     }
 }
-
-
-
